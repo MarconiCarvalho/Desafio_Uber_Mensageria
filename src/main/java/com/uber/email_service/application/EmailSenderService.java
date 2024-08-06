@@ -15,11 +15,9 @@ public class EmailSenderService implements EmailSenderUseCase {
         this.emailSenderGatway = emailGatway;
     }
 
+
     @Override
-    public void senderEmail(String to, String subject, String body) {
-        this.emailSenderGatway.sendEmail(to, subject, body);
+    public void sendEmail(String to, String subject, String body) {
+
     }
-
-
-
 }
